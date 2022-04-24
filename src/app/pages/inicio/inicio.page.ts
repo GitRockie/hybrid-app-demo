@@ -30,6 +30,11 @@ export class InicioPage implements OnInit {
       name: 'Avatar',
       redirectTo: '/avatar'
     },
+    {
+      icon: 'keypad-outline',
+      name: 'Buttons',
+      redirectTo: '/buttons'
+    },
   ];
 
   constructor() { }
