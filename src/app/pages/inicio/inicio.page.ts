@@ -26,7 +26,7 @@ export class InicioPage implements OnInit {
       redirectTo: '/alert'
     },
     {
-      icon: 'beaker-outline',
+      icon: 'person-circle-outline',
       name: 'Avatar',
       redirectTo: '/avatar'
     },
@@ -39,6 +39,26 @@ export class InicioPage implements OnInit {
       icon: 'card-outline',
       name: 'Cards',
       redirectTo: '/card'
+    },
+    {
+      icon: 'checkmark-circle-outline',
+      name: 'Checks',
+      redirectTo: '/check'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'Date-Time',
+      redirectTo: '/date-time'
+    },
+    {
+      icon: 'sparkles-outline',
+      name: 'FAB',
+      redirectTo: '/fab'
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grid',
+      redirectTo: '/grid'
     },
   ];
 
