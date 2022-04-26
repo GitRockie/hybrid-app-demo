@@ -26,7 +26,7 @@ export class InicioPage implements OnInit {
       redirectTo: '/alert'
     },
     {
-      icon: 'beaker-outline',
+      icon: 'person-circle-outline',
       name: 'Avatar',
       redirectTo: '/avatar'
     },
@@ -54,6 +54,11 @@ export class InicioPage implements OnInit {
       icon: 'sparkles-outline',
       name: 'FAB',
       redirectTo: '/fab'
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grid',
+      redirectTo: '/grid'
     },
   ];
 
