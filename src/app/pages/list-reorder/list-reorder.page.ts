@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-list-reorder',
   templateUrl: './list-reorder.page.html',
@@ -9,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class ListReorderPage implements OnInit {
 
   characters: string[] = ['Aquaman', 'Superman', 'Batman', 'Thor', 'Flash', 'Wonder Woman'];
+
+  reorderDisabled: boolean = true;
 
   constructor() { }
 
@@ -24,5 +27,7 @@ export class ListReorderPage implements OnInit {
     event.detail.complete();
     console.log(this.characters);
   }
+
+  
 
 }
