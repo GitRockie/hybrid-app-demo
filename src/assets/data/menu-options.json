@@ -68,5 +68,10 @@
       "icon": "reload-outline",
       "name": "Loading",
       "redirectTo": "/loading"
+    },
+    {
+      "icon": "albums-outline",
+      "name": "Modal",
+      "redirectTo": "/modal"
     }
 ]
