@@ -9,6 +9,8 @@ import { PopoverInfoComponent } from 'src/app/components/popover-info/popover-in
 })
 export class PopoverPage implements OnInit {
 
+  popover: HTMLElement;
+
   constructor( private popoverCtrl: PopoverController) { }
 
   ngOnInit() {
@@ -23,6 +25,9 @@ export class PopoverPage implements OnInit {
         backdropDismiss: false
       });
       await popover.present();
+
+      const { data } = await popover.onWillDismiss();
+      
     
      
     }
