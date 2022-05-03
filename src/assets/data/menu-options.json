@@ -83,6 +83,11 @@
       "icon": "stats-chart-outline",
       "name": "Progress Bar",
       "redirectTo": "/progress"
+    },
+    {
+      "icon": "arrow-down-circle-outline",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
     }
 
 ]
