@@ -5,3 +5,4 @@ export interface Componentes {
     name: string;
     redirectTo: string;
   }
+  
