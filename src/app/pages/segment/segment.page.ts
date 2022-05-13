@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-segment',
@@ -6,15 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./segment.page.scss'],
 })
 export class SegmentPage implements OnInit {
+
+  superHeroes: Observable<any>;
+  publisher: string = '';
   
   
-  constructor() { }
+  constructor( private dataService: DataService) { }
 
   ngOnInit() {
+    this.superHeroes = this.dataService.getHeroes();
   }
 
   segmentChanged( event ) {
-    console.log(event);
+    //console.log(event);
+    /*if( event.detail.value === 'all' ){
+      return this.publisher = '';
+    }*/
+    this.publisher = event.detail.value;
   }
 
 }
