@@ -15,7 +15,8 @@ import { PopoverInfoComponent } from './popover-info/popover-info.component';
   ],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    
   ],
   exports: [
     HeaderComponent,
